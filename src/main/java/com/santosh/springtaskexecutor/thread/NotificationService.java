@@ -29,6 +29,7 @@ public class NotificationService {
     @Autowired
     private NotificationDAO notificationDAO;
 
+    //initial delay is set to prepare data from the commandline runner
     @Scheduled(initialDelay = 25000, fixedDelay = 5000)
     public void execute() {
         try {
